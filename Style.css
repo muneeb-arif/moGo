@@ -117,6 +117,262 @@
     margin-left: 3px; 
     font-family:'Montserrat', ;
 }
+/* =======================Banner End======================== */
+
+/* ============================About US Start===================== */
+
+#about-us{
+    background-color: #fff;
+    padding-bottom: 110px;
+}
+.text-aa{
+    padding: 60px  60px;
+}
+.wwd{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.sau{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.sau::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.aslt{
+    color: #999999;
+    font-size: 15pt;
+    line-height: 24pt; 
+    font-weight: 400px;
+}  
+ 
+.saimgd1{
+    width: 380px;
+    height: 250px;
+    background-image: url(img/a3.jpg); 
+    box-shadow: 8px 8px #95e1d3; 
+} 
+.bgas{
+    width: 380px;
+    height: 250px;
+    background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
+    opacity: 90%; 
+    display: flex;
+}
+.itnim{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 115px;  
+}
+.asii{
+    padding-left: 60px;
+    color: #fff;
+    font-size: 25px;
+}
+.asimit{
+    display:block;
+    width: 150px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: 'Montserrat',;     
+}
+.saimgd2{
+    width: 380px;
+    height: 250px;
+    background-image: url(img/a2.jpg);  
+} 
+.saimgd3{
+    width: 380px;
+    height: 250px;
+    background-image: url(img/a1.jpg);
+    border: 3px solid #999999;  
+} 
+/* ===========about us End==============   */
+
+/* ===================FACTS START================= */
+
+#facts-s{
+     background-color:#95e1d3 ;
+     /* height: 270px; */
+}
+#facts-s:hover{ 
+    border: 3px solid #999999 ; 
+}
+.fsb{
+    display: flex;
+}
+.fmbx{ 
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fsff{
+    display: inline;
+    font-size: 72pt;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: 'Montserrat',;
+}
+.fsfr{
+    font-size: 14pt;
+    font-weight: 400px;
+    font-family: 'Montserrat',;
+    color: #ffffff;
+}
+ 
+/* ======================FACTS END==================== */
+
+/* =================AMAZING SERVICES START====================  */
+
+#a-services-s{
+    background-color: #fff;
+     
+} 
+.asc{
+    padding-bottom: 70px;
+    padding-top: 80px;
+}
+.text-aass{
+    padding: 30px  60px;
+}
+.www{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.as{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.as::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.as2pmb{
+    display: block; 
+}
+.asib2b{
+    display: block; 
+    margin-bottom: 90px;
+}
+.asibpg{
+    display: flex;
+}
+.asipgl{
+    width: 35pt;
+    height: 33px; 
+    display: flex;
+    margin-top: 5px;  
+}
+.asbpbt{
+    display: block;
+    margin-left: 25px;
+}
+.asipgt{
+    display: inline-flex-box;
+    font-size: 14pt;
+    font-family: 'Montserrat',;
+    font-weight: 500;
+    margin-bottom: 5px; 
+}
+.asipgd{
+    display: inline;
+    font-family: "Roboto",;
+    font-size: 15pt;
+    font-weight: 400;
+    color: #999999;
+}
+.asib22b{
+    display: block; 
+    margin-bottom: 90px;
+}
+.asibseo{
+    display: flex;
+}
+.asisel{
+    width: 35pt;
+    height: 33px; 
+    display: flex;
+    margin-top: 5px;
+}
+.asbsbt{
+    display: block;
+    margin-left: 25px;
+}
+.asibst{
+    display: inline-flex-box;
+    font-size: 14pt;
+    font-family: 'Montserrat',;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.asibsd{
+    display: inline;
+    font-family: "Roboto",;
+    font-size: 15pt;
+    font-weight: 400;
+    color: #999999;
+}
+/* =================AMAZING SERVICES END====================  */
+
+/* =====================Feature Start================-==== */
+
+#feature-s{
+    background-size: cover;
+    text-align: center;
+    background-image: url(img/f3.jpg); 
+}
+.fmain{
+    background-color: #f2f2f2;
+    opacity: 85%; 
+}
+.text-afs{
+    padding: 0px  60px;
+    padding-top: 110px;
+    padding-bottom: 25px;
+}
+.fad{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.UD{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.UD::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.fsimgf{
+    height: 600px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.fsimg2f{
+    margin-left: -110px;
+    margin-bottom: -250px;
+}
+/* ========================Feature End=================== */
+
+/* ========================Footer Start=-============ */
 footer{
     background-color: #f2f2f2;
     padding-top: 60px;
@@ -240,6 +496,83 @@ footer{
 .col-sm-12{
     margin-top: 30px;
 }
+
+
+/* ======================Media Quary==================== */
+@media(max-width:1400px){
+    .saimgd1{
+        width: 330px;
+        height: 250px;
+        background-image: url(img/a3.jpg); 
+        box-shadow: 8px 8px #95e1d3; 
+        margin: 0px 15px;
+    } 
+    .bgas{
+        width: 330px;
+        height: 250px;
+        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
+        opacity: 90%; 
+        display: flex; 
+    }
+    .itnim{
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 90px;
+        padding-left: 90px;   
+    }
+    .saimgd2{
+        width: 330px;
+        height: 250px;
+        background-image: url(img/a2.jpg);
+        margin: 0px 15px;  
+    } 
+    .saimgd3{
+        width: 330px;
+        height: 250px;
+        background-image: url(img/a1.jpg);
+        border: 3px solid #999999;  
+        margin: 0px 15px;
+    }
+    /* ====================about us end =================== */
+}
+@media(max-width:1200px){
+    .saimgd1{
+        width: 310px;
+        height: 250px;
+        background-image: url(img/a3.jpg); 
+        box-shadow: 8px 8px #95e1d3; 
+        margin: 0px 15px; 
+    } 
+    .bgas{
+        width: 310px;
+        height: 250px;
+        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
+        opacity: 90%; 
+        display: flex; 
+    }
+    .itnim{
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 90px;
+        padding-left: 75px;   
+    }
+    .saimgd2{
+        width: 310px;
+        height: 250px;
+        background-image: url(img/a2.jpg);
+        margin: 0px 15px;  
+    } 
+    .saimgd3{
+        width: 310px;
+        height: 250px;
+        background-image: url(img/a1.jpg);
+        border: 3px solid #999999;  
+        margin: 0px 15px;
+    }
+    /* ==================about us end============ */
+}
 @media(max-width:992px){
     .banner{ 
         margin-top: 50px;
@@ -260,6 +593,66 @@ footer{
         color: #f2f2f2;
         background-color: transparent;
     }
+    /* =================about us================= */
+    .saimgd1{
+        width: 310px;
+        height: 250px;
+        background-image: url(img/a3.jpg); 
+        box-shadow: 8px 8px #95e1d3; 
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .bgas{
+        width: 310px;
+        height: 250px;
+        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
+        opacity: 90%; 
+        display: flex; 
+    }
+    .itnim{
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 90px;
+        padding-left: 75px;   
+    }
+    .saimgd2{
+        width: 310px;
+        height: 250px;
+        background-image: url(img/a2.jpg); 
+        margin-left: auto;
+        margin-right: auto; 
+    } 
+    .saimgd3{
+        width: 310px;
+        height: 250px;
+        background-image: url(img/a1.jpg);
+        border: 3px solid #999999; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ===========Facts=================== */
+
+    .fsff{
+        display: inline;
+        font-size: 50pt;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 0px;
+        font-family: 'Montserrat',;
+    }
+    .fsfr{
+        font-size: 12pt;
+        font-weight: 400px;
+        font-family: 'Montserrat',;
+        color: #ffffff;
+    }
+
+    /* ===================Facts end=========== */
+    
+
+    /* ===================Footer============ */
     .logo2{
         color: #cccccc;
         font-size: 30px;
@@ -320,6 +713,51 @@ footer{
         font-family: 'Montserrat',;
     }
 }
+@media(max-width:768px){ 
+    .fmbx{ 
+        padding-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;  
+    } 
+    .fsff{
+        display: inline;
+        font-size: 72pt;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 0px;
+        font-family: 'Montserrat',;
+        flex-direction: column;
+    }
+    .fsfr{
+        font-size: 14pt;
+        font-weight: 400px;
+        font-family: 'Montserrat',;
+        color: #ffffff;
+        flex-direction: column;
+    }
+    .fsb{
+        flex-direction: column; 
+    }
+    /* ==========facts end========== */
+
+    /* =============AMAZING FEATURE START============== */
+    .fsimg{
+        padding: 0px;
+    }
+    .fsimgf{
+        height: 500px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .fsimg2f{
+        margin-left: -100px;
+        margin-bottom: -230px;
+        width: 180px;
+        height: 350px; 
+    }
+    /* ============A FEATURE END============= */
+}
 @media(max-width:425px){
     .nav-item{
         display: inline-block; 
@@ -334,5 +772,64 @@ footer{
         font-weight: 400px;
         font-family: 'Montserrat',;
         border-bottom: 3px solid transparent;
+    } 
+      /* =================about us================= */
+      .saimgd1{
+        width: 290px;
+        height: 230px;
+        background-image: url(img/a3.jpg); 
+        box-shadow: 8px 8px #95e1d3; 
+        /* margin: 0px 15px; */
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    .bgas{
+        width: 290px;
+        height: 230px;
+        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
+        opacity: 90%; 
+        display: flex;  
     }
+    .itnim{
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding-top: 80px;
+        padding-left: 65px;  
+    }
+    .saimgd2{
+        width: 300px;
+        height: 230px;
+        background-image: url(img/a2.jpg);
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .saimgd3{
+        width: 300px;
+        height: 230px;
+        background-image: url(img/a1.jpg);
+        border: 3px solid #999999;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* =============AABOUT US END=========== */
+
+    /* =============AMAZING FEATURE START============== */
+    .fsimg{
+        padding: 0px;
+    }
+    .fsimgf{
+        height: 450px;
+        width: 280px; 
+        margin-left: -10px; 
+    }
+    .fsimg2f{
+        margin-left: -150px;
+        margin-bottom: -200px;
+        width: 180px;
+        height: 330px; 
+    }
+    /* ============A FEATURE END============= */
+    
+    
 }
