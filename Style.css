@@ -372,6 +372,84 @@
 }
 /* ========================Feature End=================== */
 
+/* =========================SERVICE START=================== */
+
+.text-as2{
+    padding: 0px  60px;
+    padding-top: 110px;
+    padding-bottom: 25px;
+}
+.st{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.wwdo{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.wwdo::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.s2st{
+    color: #999999;
+    font-size: 15pt;
+    line-height: 24pt; 
+    font-weight: 400px;
+} 
+.s2si{
+    width: 570px;
+    height: 380px; 
+}
+.mb-item{ 
+    margin: 0px 25px 10px 25px; 
+    border: 1px solid #cccccc;
+}
+.mb1pltd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #cccccc ; 
+}
+.mb1pltdf{
+    display: flex;
+    align-items: center;
+}
+.mb1pltdf img{
+    width: 30px;
+    height: 30px;
+}
+.mb1pltdf h1{
+    font-size: 14pt;
+    font-weight: 500;
+    font-family: 'Montserrat',;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+.bb-link{
+    font-size: 14pt;
+    color: #cccccc; 
+    text-decoration: none;
+}
+.bb-link i{
+    width: 21px;
+    height: 12px;
+    font-size: 14pt;
+}
+.pltf{
+    padding: 15px; 
+    font-size: 15pt;
+    font-style: italic;
+    font-family: 'Roboto',;
+    color: #cccccc;
+}
+/* ============================SERVICES END===================== */
+
 /* ========================Footer Start=-============ */
 footer{
     background-color: #f2f2f2;
@@ -751,7 +829,7 @@ footer{
         margin-right: auto; 
     }
     .fsimg2f{
-        margin-left: -100px;
+        margin-left: -70px;
         margin-bottom: -230px;
         width: 180px;
         height: 350px; 
@@ -820,12 +898,12 @@ footer{
     }
     .fsimgf{
         height: 450px;
-        width: 280px; 
-        margin-left: -10px; 
+        width: 300px; 
+        margin-left: auto;
+        margin-right: auto; 
     }
-    .fsimg2f{
-        margin-left: -150px;
-        margin-bottom: -200px;
+    .fsimg2f{ 
+        margin: 20px auto;
         width: 180px;
         height: 330px; 
     }
