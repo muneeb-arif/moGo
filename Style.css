@@ -373,7 +373,9 @@
 /* ========================Feature End=================== */
 
 /* =========================SERVICE START=================== */
-
+#services-s{
+    margin-bottom: 80px;
+} 
 .text-as2{
     padding: 0px  60px;
     padding-top: 110px;
@@ -402,45 +404,62 @@
     font-weight: 400px;
 } 
 .s2si{
-    width: 570px;
-    height: 380px; 
+    margin-bottom: 25px;
+    height: 380px;
+    width: 570px; 
+} 
+.accordion{
+    margin: 0px 0px 0px 25px;
+    width: 100%;
 }
-.mb-item{ 
-    margin: 0px 25px 10px 25px; 
-    border: 1px solid #cccccc;
-}
-.mb1pltd{
+.accordion-item{
+    border: 1px solid #cccccc; 
+    margin-bottom: 20px;
+} 
+.bb-link{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #cccccc ; 
-}
-.mb1pltdf{
-    display: flex;
-    align-items: center;
-}
-.mb1pltdf img{
-    width: 30px;
-    height: 30px;
-}
-.mb1pltdf h1{
-    font-size: 14pt;
-    font-weight: 500;
-    font-family: 'Montserrat',;
-    padding-left: 20px;
-    margin-bottom: 0px;
-}
-.bb-link{
-    font-size: 14pt;
-    color: #cccccc; 
+    padding: 15px; 
     text-decoration: none;
+}
+.bb-link i:hover{ 
+    color: #cccccc;  
 }
 .bb-link i{
     width: 21px;
     height: 12px;
     font-size: 14pt;
+    color: #cccccc; 
+    text-decoration: none;
 }
+.ltp{
+    display: flex;
+    align-items: center;
+}
+.ltp img{
+    width: 30px;
+    height: 30px;
+}
+.ltp h1{
+    font-size: 14pt;
+    font-weight: 500;
+    font-family: 'Montserrat',;
+    padding-left: 20px;
+    margin-bottom: 0px; 
+    color: #000;
+}
+.ltp h1:hover{
+    color: #000;
+} 
+.bb-link .fa-chevron-up{
+    display: none;
+}
+.d-lorem{
+    max-height: 0;
+    overflow: hidden; 
+    border-top: 1px solid #cccccc; 
+} 
 .pltf{
     padding: 15px; 
     font-size: 15pt;
@@ -448,6 +467,16 @@
     font-family: 'Roboto',;
     color: #cccccc;
 }
+.accordion-item:target .d-lorem{
+    max-height: 20rem;
+} 
+.accordion-item:target .bb-link .fa-chevron-down{
+    display: none;
+}
+.accordion-item:target .bb-link .fa-chevron-up{
+    display: block;
+}
+ 
 /* ============================SERVICES END===================== */
 
 /* ========================Footer Start=-============ */
@@ -650,6 +679,20 @@ footer{
         margin: 0px 15px;
     }
     /* ==================about us end============ */
+
+    /* ===================SERVICES 2 START=================== */
+
+    .s2si{
+        width: 456px;
+        height: 400px;
+    }
+    .accordion{
+        width: 456px;
+        margin: 0px;
+    }
+
+    /* ===================SERVICES 2 END=================== */
+
 }
 @media(max-width:992px){
     .banner{ 
@@ -729,6 +772,23 @@ footer{
 
     /* ===================Facts end=========== */
     
+    /* ===================SERVICES 2 START=================== */
+
+    .s2si{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;  
+        width: 570px;
+        height: 380px; 
+    }
+    .accordion{
+        margin-right: auto;
+        margin-left: auto;
+        width: 560px;
+        justify-content: center;
+    }
+
+    /* ===================SERVICES 2 END=================== */
 
     /* ===================Footer============ */
     .logo2{
@@ -835,6 +895,25 @@ footer{
         height: 350px; 
     }
     /* ============A FEATURE END============= */
+    
+    /* ===================SERVICES 2 START=================== */
+
+    .s2si{
+        margin-left: auto;
+        margin-right: auto;  
+        width: 570px;
+        height: 380px; 
+        display: flex;
+    }
+    .accordion{
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        width: 570px;
+    }
+
+    /* ===================SERVICES 2 END=================== */
+
 }
 @media(max-width:425px){
     .nav-item{
@@ -908,6 +987,24 @@ footer{
         height: 330px; 
     }
     /* ============A FEATURE END============= */
-    
+        
+    /* ===================SERVICES 2 START=================== */
+
+    .s2si{
+        margin-left: auto;
+        margin-right: auto;  
+        width: 320px;
+        height: 300px;
+        display: flex;  
+    }
+    .accordion{
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        width: 320px;
+    }
+
+    /* ===================SERVICES 2 END=================== */
+
     
 }
