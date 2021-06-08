@@ -479,6 +479,121 @@
  
 /* ============================SERVICES END===================== */
 
+/* ==============================Quote- START===================== */
+
+#quote-s{
+    background-color: #f2f2f2; 
+}
+.quote-b{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 70px 0px;
+}
+.qtca{
+    display: flex;
+}
+.qimg{
+    border: 2px solid #95e1d3;
+    padding: 70px;
+    margin-left: 70px; 
+}
+.qtnau{
+    display: block;
+    justify-content: space-between;
+    margin-left: 50px; 
+} 
+.aut{
+    font-size: 24pt;
+    font-style: italic;
+    font-family: 'Roboto',;
+    color: #cccccc;
+    margin-bottom: 0px;
+    display: block;
+} 
+.auna{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+    display: flex;
+    margin-top: 20px;
+}
+.auna::before{
+    background-color: #f38181;
+     content: "";
+     display: flex;
+     width: 60px;
+     height: 3px; 
+     margin-top: 20px;
+     margin-right: 10px;
+}
+.fa-chevron-left{
+    height: 21px;
+    width: 12px;
+    color: #999999;
+}
+.fa-chevron-right{
+    height: 21px;
+    width: 12px;
+    color: #999999;
+}
+  
+/* ======================Quote END============================ */
+
+/* =======================OUR TEAM START====================== */
+
+.tots{ 
+    padding-top: 110px;
+    padding-bottom: 25px;
+}
+.wwa{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.mot{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.mot::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.otlt{ 
+    color: #999999;
+    font-size: 15pt;
+    line-height: 24pt; 
+    font-weight: 400px;
+    margin-bottom: 5rem; 
+}
+.m-dix{ 
+    width: 380px;
+    height: 470px; 
+    box-shadow: 8px 8px #95e1d3;    
+    background-image: url(img/ot1.jpg);
+    margin-top: -8px;
+    margin-left: -10px; 
+}
+.m-dix-im{
+    display: flex;
+    background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
+    opacity: 90%; 
+    width: 380px;
+    height: 470px;
+} 
+.oti2{
+    width: 380px;
+    height: 470px;
+}
+.otim3{
+    width: 380px;
+    height: 470px;
+}
+
+/* =======================OUR TEAM END========================= */
+
 /* ========================Footer Start=-============ */
 footer{
     background-color: #f2f2f2;
@@ -790,6 +905,32 @@ footer{
 
     /* ===================SERVICES 2 END=================== */
 
+    /* =====================QUOTE START=================== */
+
+    .qtca{
+        display: block;
+    }
+    .qimg{  
+        display: flex;
+        margin: auto;
+    } 
+    .qtnau{ 
+        margin: auto; 
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .aut{ 
+        display: block;
+        text-align: center;
+    } 
+    .auna{ 
+        display: flex;
+        margin-top: 20px; 
+        justify-content: center;
+    } 
+
+    /* ========================QUOTE END======================== */
+
     /* ===================Footer============ */
     .logo2{
         color: #cccccc;
@@ -912,8 +1053,7 @@ footer{
         width: 570px;
     }
 
-    /* ===================SERVICES 2 END=================== */
-
+    /* ===================SERVICES 2 END=================== */ 
 }
 @media(max-width:425px){
     .nav-item{
