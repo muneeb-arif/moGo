@@ -93,6 +93,7 @@
     font-weight: bold;
     background-color: transparent;
     border: 3px solid #f2f2f2; 
+    margin-bottom: 40px;
 }
 .range{
     height: 50px;
@@ -568,21 +569,54 @@
     font-weight: 400px;
     margin-bottom: 5rem; 
 }
-.m-dix{ 
+.m-dix{
     width: 380px;
-    height: 470px; 
-    box-shadow: 8px 8px #95e1d3;    
-    background-image: url(img/ot1.jpg);
+    height: 470px;
+    background-color: #95e1d3;
+}  
+/* .oti1:hover{
     margin-top: -8px;
-    margin-left: -10px; 
-}
-.m-dix-im{
-    display: flex;
+    margin-left: -8px;
+} */
+/* .m-dix-im:hover{
+    margin-top: -8px;
+    margin-left: -8px;
     background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
     opacity: 90%; 
     width: 380px;
     height: 470px;
+} */
+.m-dix-im{
+    width: 380px;
+    height: 470px;
+}
+/* .m-dix:hover{ 
+    width: 380px;
+    height: 470px; 
+    background-image: url(img/ot1.jpg);
+    margin-top: -8px;
+    margin-left: -10px;
+    box-shadow: 8px 8px #95e1d3;    
+    overflow: hidden;
+    opacity: 90%;  
+}  */
+ 
+.ntot{
+    margin-top: 30px;
+    display: block;
 } 
+.mattdix{
+    font-size: 14pt;
+    font-family: 'Montserrat',;
+    font-weight: 500px;
+    margin-bottom: 10px;
+}
+.gpd{
+    font-size: 15pt;
+    font-family: 'Roboto',;
+    font-style: italic;
+    color: #999999;
+}
 .oti2{
     width: 380px;
     height: 470px;
@@ -593,6 +627,306 @@
 }
 
 /* =======================OUR TEAM END========================= */
+
+/* =========================LOGOS START===================== */
+
+.logos-s{
+    background-color: #f2f2f2;
+    margin-top: 70px;
+}
+.logos-m{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.logos-m img{
+    width: 120px;
+    height: 120px;
+}
+
+/* ================================LOGOS END===================== */
+
+/* ===================WORK SECTION START================= */
+
+.text-ws{ 
+    padding-top: 110px;
+    padding-bottom: 25px;
+}
+.wad{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.souw{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.souw::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.wslt{ 
+    color: #999999;
+    font-size: 15pt;
+    line-height: 24pt; 
+    font-weight: 400px;
+    margin-bottom: 5rem; 
+}
+
+/* =======================WORK SECTION END===================== */
+
+/* =======================WHAT PEOPLE SAY START===================== */
+
+.wps-s{ 
+    background-image: url(img/wps1.jpg);
+    background-size: cover; 
+}
+.wpsmain{
+    background-color: #f2f2f2;
+    opacity: 85%; 
+    padding-bottom: 40px; 
+}
+.wps-text{
+    padding: 0px  60px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+.hcs{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.wps{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.wps::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.wpsm{
+    margin-bottom: 40px;
+}
+.wspin{
+    display: flex;
+}
+.wpsttd{ 
+    text-align: left;
+    margin-left: 30px;
+}
+.wpsnf{
+    display: block;
+    font-size: 14pt;
+    font-family: 'Montserrat',;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+.wpstf{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #333333; 
+    font-size: 15pt; 
+    letter-spacing: -1.5px;
+}
+.wpstf::after{
+    content: "";
+    background-color: #f38181;
+    height: 3px;
+    width: 60px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom:20px ;
+}
+.wpsdf{
+    font-size: 15pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    color: #999999;
+}
+/* =======================WHAT PEOPLE SAY END===================== */
+
+/* =======================BLOG START===================== */
+
+#blog-s{
+    padding-bottom: 70px;
+}
+.blog-t{
+    padding: 0px  60px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+.oss{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+}
+.lb{
+    font-size: 30pt;
+    font-weight: bold; 
+}
+.lb::after{
+    background-color: #f38181;
+     content: "";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 40px auto;
+}
+.lbmi{
+    display: flex;
+    flex-direction: column;
+}
+.lbimf{
+    display: flex;
+    width: 350px;
+}
+.lbdate{
+    background-color: #95e1d3;
+    width: 60px;
+    height: 70px; 
+    margin-left: -10px;
+    margin-top: -80px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+} 
+.lbdtf{
+    font-size: 30pt;
+    font-weight: 700;
+    color: #f2f2f2;
+    letter-spacing: -3px;
+    margin-bottom: 0px;
+    display: inline-block;
+    align-content: center;
+    line-height: 32px;
+}
+.lbmf{
+    font-size: 15pt;
+    font-weight: 400;
+    color: #f2f2f2;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+    display: inline-block;
+    align-content: center;
+    line-height: 23px;
+}
+.lbnd{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.lbnf{
+    font-size: 14pt;
+    font-family: 'Montserrat',;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.lbdf{
+    font-size: 15pt;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+}
+.lbnd::after{
+    content: "";
+    background-color: #e5e5e5;
+    width: 380px;
+    height: 1px;
+    margin: 25px 0px;
+}
+.lbvnc{
+    display: flex;
+    margin-bottom: 30px;
+}
+.lbvf{
+    display: flex; 
+    align-items:flex-start;
+}
+.eyic{
+    color: #95e1d3;
+    line-height: 15pt;
+}
+.lbvn{
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 15pt;
+    font: 300px;
+    font-family: 'Roboto', sans-serif; 
+    font-style: italic;
+    color: #999999;
+    line-height: 15pt;
+    letter-spacing: -1px;
+}
+.lbcf{
+    display: flex;
+    margin-left: 25px;
+}
+.cmic{
+    color: #95e1d3;
+    line-height: 15pt;
+}
+.lbcn{
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 15pt;
+    font: 300px;
+    font-family: 'Roboto', sans-serif; 
+    font-style: italic;
+    color: #999999;
+    line-height: 15pt;
+    letter-spacing: -1px;
+} 
+/* ========================BLOG END======================= */
+
+/* <!-- ======================MAP START======================== --> */
+
+#map-s{ 
+    background-image: url(img/m1.jpg);
+    background-size: cover; 
+}
+.mm-b{
+    background-color: #f2f2f2;
+    opacity: 85%; 
+}
+.m-text{
+    padding: 40px 0px;
+}
+.lic{
+    margin-bottom: 10px;
+    font-size: 24pt;
+    font-weight: 500;
+}
+.opm{
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: 'Montserrat',;
+}
+.opm::after{
+    content: "";
+    background-color: #f38181;
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 20px auto;
+     
+}
+.mlink{
+    text-decoration: none;
+    color: #f38181;
+}
+.mlink:hover{
+    color: #f38181;
+}
+
+     
+/* <!-- =======================MAP END======================== --> */
 
 /* ========================Footer Start=-============ */
 footer{
@@ -808,6 +1142,16 @@ footer{
 
     /* ===================SERVICES 2 END=================== */
 
+    /* ===================BLOG START=================== */
+
+    .lbimf{
+        display: flex;
+        width: 300px;
+        height: 220px;
+    }
+
+    /* ===================BLOG END=================== */
+
 }
 @media(max-width:992px){
     .banner{ 
@@ -931,7 +1275,27 @@ footer{
 
     /* ========================QUOTE END======================== */
 
-    /* ===================Footer============ */
+     /* ========================LOGOS START======================== */
+
+    .logos-m img{
+        margin-right: auto;
+        margin-left: auto;
+        width: 100px;
+        height: 100px;
+    }
+ /* ========================LOGOS END======================== */
+
+    /* ===================BLOG START=================== */
+
+    .lbimf{
+        display: flex;
+        width: 380px;
+        height: 240px;
+    }
+
+    /* ===================BLOG END=================== */
+
+    /* ===================Footer Start============ */
     .logo2{
         color: #cccccc;
         font-size: 30px;
@@ -1054,6 +1418,23 @@ footer{
     }
 
     /* ===================SERVICES 2 END=================== */ 
+
+    /* ===================LOGOS START=================== */ 
+    .logos-m{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logos-m img{
+        margin-right: auto;
+        margin-left: auto;
+        width: 150px;
+        height: 150px;
+    }
+    /* ===================LOGOS END=================== */ 
 }
 @media(max-width:425px){
     .nav-item{
