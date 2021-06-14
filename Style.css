@@ -485,20 +485,30 @@
 #quote-s{
     background-color: #f2f2f2; 
 }
-.quote-b{
+/* .quote-b{
     display: flex; 
     align-items: center;
     justify-content: space-between; 
     padding: 70px 0px;
-}
+} */
 .qtca{
     display: flex;
+    padding: 70px 0px;
+    justify-content: space-between; 
 }
 .qimg{
     border: 2px solid #95e1d3;
     padding: 70px;
-    margin-left: 70px; 
+    margin-left: 30px; 
+} 
+/* .slick-prev:before, .slick-next:before{
+    color:#999999;
 }
+.slick-next:before, .slick-prev:before{
+    color:#999999;
+    float: right;
+    justify-content: space-between;
+} */
 .qtnau{
     display: block;
     justify-content: space-between;
@@ -527,7 +537,7 @@
      margin-top: 20px;
      margin-right: 10px;
 }
-.fa-chevron-left{
+/* .fa-chevron-left{
     height: 21px;
     width: 12px;
     color: #999999;
@@ -536,7 +546,7 @@
     height: 21px;
     width: 12px;
     color: #999999;
-}
+} */
   
 /* ======================Quote END============================ */
 
@@ -677,6 +687,50 @@
 }
 
 /* =======================WORK SECTION END===================== */
+
+/* ==============================testimonial START===================== */
+
+#testimonial-s{
+    background-color: #fff; 
+} 
+.tmca{
+    display: flex;
+    padding: 80px 0px;
+    justify-content: space-between; 
+}
+.timg{ 
+    margin-left: 30px; 
+}  
+.tmnau{
+    display: block;
+    justify-content: space-between;
+    margin-left: 50px; 
+} 
+.aut{
+    font-size: 24pt;
+    font-style: italic;
+    font-family: 'Roboto',;
+    color: #cccccc;
+    margin-bottom: 0px;
+    display: block;
+} 
+.auna{
+    font-family:  'Kaushan Script', cursive; 
+    font-size: 24pt;
+    display: flex;
+    margin-top: 20px;
+}
+.auna::before{
+    background-color: #f38181;
+     content: "";
+     display: flex;
+     width: 60px;
+     height: 3px; 
+     margin-top: 20px;
+     margin-right: 10px;
+} 
+  
+/* ======================testimonial END============================ */
 
 /* =======================WHAT PEOPLE SAY START===================== */
 
