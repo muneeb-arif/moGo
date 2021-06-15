@@ -151,51 +151,77 @@
     line-height: 24pt; 
     font-weight: 400px;
 }  
- 
-.saimgd1{
-    width: 380px;
-    height: 250px;
-    background-image: url(img/a3.jpg); 
-    box-shadow: 8px 8px #95e1d3; 
-} 
-.bgas{
-    width: 380px;
-    height: 250px;
-    background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
-    opacity: 90%; 
-    display: flex;
-}
-.itnim{
-    width: 120px;
-    height: 40px;
+.box{
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    padding-top: 90px;
-    padding-left: 115px;  
 }
-.asii{
-    padding-left: 60px;
-    color: #fff;
-    font-size: 25px;
+.box:hover{ 
+    margin-left: -8px;
+    margin-top: -8px;
+    box-shadow: 8px 8px #95e1d3; 
 }
-.asimit{
-    display:block;
-    width: 150px;
-    margin-bottom: 0px;
-    color: #fff;
-    font-size: 18pt;
-    font-weight: bold;
-    font-family: 'Montserrat',;     
+.box::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)) ;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0px;
+    opacity: 1%;
+    transition: all 0.4s linear;
 }
-.saimgd2{
-    width: 380px;
-    height: 250px;
-    background-image: url(img/a2.jpg);  
+.box:hover:before{
+    opacity: 85%;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s linear; 
 } 
-.saimgd3{
-    width: 380px;
-    height: 250px;
-    background-image: url(img/a1.jpg);
-    border: 3px solid #999999;  
+.box img:hover{
+    margin-left: -8px;
+    margin-bottom: -8px;
+} 
+.box .box-content{
+    color: #fff;
+    width: 100%;
+    transform: translateY(-50%) scale(0);
+    position: absolute;
+    top: 55%;
+    left: 0;
+    font-family: 'Montserrat',;
+    font-weight: bold;
+    font-size: 18pt;
+    /* transition: all 0.4s linear;  */
+
+}
+.box:hover .box-content{
+    transform: translateY(-50%) scale(1);  
+}
+.box .box-icon{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 8px; 
+} 
+.box-icon li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left:auto;
+    margin-right: auto;
+}
+.box:hover .box-icon{
+    color: #fff;
+    font-family: 'Montserrat',;
+    font-weight: bold;
+    font-size: 18pt;
+    width: 100%;
+    position: absolute;
+    top:35%;
+    left: 0  ;
 } 
 /* ===========about us End==============   */
 
@@ -563,6 +589,7 @@
 .mot{
     font-size: 30pt;
     font-weight: bold; 
+    font-family: 'Montserrat';
 }
 .mot::after{
     background-color: #f38181;
@@ -578,39 +605,83 @@
     line-height: 24pt; 
     font-weight: 400px;
     margin-bottom: 5rem; 
-}
-.m-dix{
-    width: 380px;
-    height: 470px;
-    background-color: #95e1d3;
 }  
-/* .oti1:hover{
-    margin-top: -8px;
-    margin-left: -8px;
-} */
-/* .m-dix-im:hover{
-    margin-top: -8px;
-    margin-left: -8px;
-    background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
-    opacity: 90%; 
-    width: 380px;
-    height: 470px;
-} */
-.m-dix-im{
-    width: 380px;
-    height: 470px;
-}
-/* .m-dix:hover{ 
-    width: 380px;
-    height: 470px; 
-    background-image: url(img/ot1.jpg);
-    margin-top: -8px;
-    margin-left: -10px;
-    box-shadow: 8px 8px #95e1d3;    
+.box{
+    position: relative;
     overflow: hidden;
-    opacity: 90%;  
-}  */
- 
+    text-align: center;
+}
+.box:hover{ 
+    margin-left: -8px;
+    margin-top: -8px;
+    box-shadow: 8px 8px #95e1d3; 
+}
+.box::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)) ;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0px;
+    opacity: 1%;
+    transition: all 0.4s linear;
+}
+.box:hover:before{
+    opacity: 85%;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s linear; 
+} 
+.box img:hover{
+    margin-left: -8px;
+    margin-bottom: -8px;
+}  
+.box .box-icon{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 8px; 
+} 
+.box-icon li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left:auto;
+    margin-right: auto;
+}
+.box:hover .box-icon{  
+    font-size: 18pt;
+    width: 100%;
+    position: absolute;
+    top:45%;
+    left:0; 
+}
+.box-icon{
+    display: flex;
+    justify-content: center;
+    width: 224px;
+    height: 56px;
+}
+.box-icon li{
+    display: flex;
+    margin-left: 1px;
+    align-items: center; 
+} 
+.iclist i{
+    background-color: #fce38a; 
+    color: #f38181; 
+    margin: 0px;
+    padding: 18px 19px;
+    font-size: 14pt;
+    font-family: 'Montserrat',;
+} 
+.active i{
+    color: #fff;
+    background-color: #f38181;
+}  
 .ntot{
     margin-top: 30px;
     display: block;
@@ -685,6 +756,68 @@
     font-weight: 400px;
     margin-bottom: 5rem; 
 }
+.gmain{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.gmain::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)) ;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0px;
+    opacity: 1%;
+    transition: all 0.4s linear;
+}
+.gmain:hover:before{
+    opacity: 85%;
+}
+.gmain img{ 
+    width: 480px;
+    height: 390px;
+    transition: all 0.4s linear; 
+}  
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
 
 /* =======================WORK SECTION END===================== */
 
@@ -891,7 +1024,7 @@
 .lbnd::after{
     content: "";
     background-color: #e5e5e5;
-    width: 380px;
+    width: 340px;
     height: 1px;
     margin: 25px 0px;
 }
@@ -1109,79 +1242,14 @@ footer{
 
 
 /* ======================Media Quary==================== */
-@media(max-width:1400px){
-    .saimgd1{
-        width: 330px;
-        height: 250px;
-        background-image: url(img/a3.jpg); 
-        box-shadow: 8px 8px #95e1d3; 
-        margin: 0px 15px;
+ 
+@media(max-width:1200px){ 
+
+    /* =================ABOUT US START================= */
+    .box .box-content{
+        top: 58%;
     } 
-    .bgas{
-        width: 330px;
-        height: 250px;
-        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
-        opacity: 90%; 
-        display: flex; 
-    }
-    .itnim{
-        width: 120px;
-        height: 40px;
-        text-align: center;
-        padding-top: 90px;
-        padding-left: 90px;   
-    }
-    .saimgd2{
-        width: 330px;
-        height: 250px;
-        background-image: url(img/a2.jpg);
-        margin: 0px 15px;  
-    } 
-    .saimgd3{
-        width: 330px;
-        height: 250px;
-        background-image: url(img/a1.jpg);
-        border: 3px solid #999999;  
-        margin: 0px 15px;
-    }
-    /* ====================about us end =================== */
-}
-@media(max-width:1200px){
-    .saimgd1{
-        width: 310px;
-        height: 250px;
-        background-image: url(img/a3.jpg); 
-        box-shadow: 8px 8px #95e1d3; 
-        margin: 0px 15px; 
-    } 
-    .bgas{
-        width: 310px;
-        height: 250px;
-        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
-        opacity: 90%; 
-        display: flex; 
-    }
-    .itnim{
-        width: 120px;
-        height: 40px;
-        text-align: center;
-        padding-top: 90px;
-        padding-left: 75px;   
-    }
-    .saimgd2{
-        width: 310px;
-        height: 250px;
-        background-image: url(img/a2.jpg);
-        margin: 0px 15px;  
-    } 
-    .saimgd3{
-        width: 310px;
-        height: 250px;
-        background-image: url(img/a1.jpg);
-        border: 3px solid #999999;  
-        margin: 0px 15px;
-    }
-    /* ==================about us end============ */
+    /* =================ABOUT US END================= */
 
     /* ===================SERVICES 2 START=================== */
 
@@ -1208,6 +1276,8 @@ footer{
 
 }
 @media(max-width:992px){
+    /* =================BANNER START================= */
+
     .banner{ 
         margin-top: 50px;
     }
@@ -1227,46 +1297,26 @@ footer{
         color: #f2f2f2;
         background-color: transparent;
     }
-    /* =================about us================= */
-    .saimgd1{
-        width: 310px;
-        height: 250px;
-        background-image: url(img/a3.jpg); 
-        box-shadow: 8px 8px #95e1d3; 
-        margin-left: auto;
-        margin-right: auto;
-    } 
-    .bgas{
-        width: 310px;
-        height: 250px;
-        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
-        opacity: 90%; 
-        display: flex; 
-    }
-    .itnim{
-        width: 120px;
-        height: 40px;
-        text-align: center;
-        padding-top: 90px;
-        padding-left: 75px;   
-    }
-    .saimgd2{
-        width: 310px;
-        height: 250px;
-        background-image: url(img/a2.jpg); 
-        margin-left: auto;
-        margin-right: auto; 
-    } 
-    .saimgd3{
-        width: 310px;
-        height: 250px;
-        background-image: url(img/a1.jpg);
-        border: 3px solid #999999; 
-        margin-left: auto;
-        margin-right: auto;
-    }
+    /* =================BANNER END================= */
 
-    /* ===========Facts=================== */
+    /* =================ABOUT US START================= */
+    .box{
+        margin-bottom: 40px;
+    }
+    .box .box-content{
+        top: 58%;
+        font-size: 25pt;
+    }
+    .box:hover .box-icon{ 
+        font-weight: bold;
+        font-size: 35pt; 
+        top:38%; 
+    } 
+    
+
+    /* =================ABOUT US END================= */
+ 
+    /* ===================Facts START=================== */
 
     .fsff{
         display: inline;
@@ -1329,6 +1379,17 @@ footer{
 
     /* ========================QUOTE END======================== */
 
+    /* =======================OUR TEAM start========================= */
+
+    .box{
+        margin-top: 40px;
+    }
+    .ntot{
+        margin-top: -20px;
+    }
+
+    /* =======================OUR TEAM END========================= */
+ 
      /* ========================LOGOS START======================== */
 
     .logos-m img{
@@ -1411,6 +1472,23 @@ footer{
     }
 }
 @media(max-width:768px){ 
+
+    /* =========================ABOUT US STRAT===================== */
+
+    .box .box-content{
+        top: 58%;
+        font-size: 20pt;
+    }
+    .box:hover .box-icon{ 
+        font-weight: bold;
+        font-size: 22pt; 
+        top:42%;  
+    } 
+
+    /* =========================ABOUT US END===================== */
+
+    /* =========================FACTS STRAT===================== */
+ 
     .fmbx{ 
         padding-bottom: 30px;
         margin-right: auto;
@@ -1435,7 +1513,8 @@ footer{
     .fsb{
         flex-direction: column; 
     }
-    /* ==========facts end========== */
+     /* =========================FACTS END===================== */
+
 
     /* =============AMAZING FEATURE START============== */
     .fsimg{
@@ -1490,7 +1569,9 @@ footer{
     }
     /* ===================LOGOS END=================== */ 
 }
-@media(max-width:425px){
+@media(max-width:425px){ 
+
+    /* =========================BANNER STRAT===================== */
     .nav-item{
         display: inline-block; 
         padding: 20px 0px 0px 10px; 
@@ -1505,47 +1586,26 @@ footer{
         font-family: 'Montserrat',;
         border-bottom: 3px solid transparent;
     } 
-      /* =================about us================= */
-      .saimgd1{
-        width: 290px;
-        height: 230px;
-        background-image: url(img/a3.jpg); 
-        box-shadow: 8px 8px #95e1d3; 
-        /* margin: 0px 15px; */
-        margin-left: auto;
-        margin-right: auto;
-    }  
-    .bgas{
-        width: 290px;
-        height: 230px;
-        background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
-        opacity: 90%; 
-        display: flex;  
-    }
-    .itnim{
-        width: 120px;
-        height: 40px;
-        text-align: center;
-        padding-top: 80px;
-        padding-left: 65px;  
-    }
-    .saimgd2{
-        width: 300px;
-        height: 230px;
-        background-image: url(img/a2.jpg);
-        margin-left: auto;
-        margin-right: auto;
-    } 
-    .saimgd3{
-        width: 300px;
-        height: 230px;
-        background-image: url(img/a1.jpg);
-        border: 3px solid #999999;  
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* =============AABOUT US END=========== */
+   /* =========================BANNER END===================== */
 
+   /* =========================ABOUT US STRAT===================== */
+
+   .box{
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .box .box-content{
+    top: 58%;
+    font-size: 18pt;
+    }
+    .box:hover .box-icon{ 
+    font-weight: bold;
+    font-size: 18pt; 
+    top:40%;  
+} 
+
+/* =========================ABOUT US END===================== */
+ 
     /* =============AMAZING FEATURE START============== */
     .fsimg{
         padding: 0px;
