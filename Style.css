@@ -1,3 +1,6 @@
+body{
+    scroll-behavior: smooth; 
+}
 #main{  
     background-image: url(bg.jpg); 
     background-size: cover;
@@ -124,7 +127,7 @@
 
 #about-us{
     background-color: #fff;
-    padding-bottom: 110px;
+    padding-bottom: 110px; 
 }
 .text-aa{
     padding: 60px  60px;
@@ -151,17 +154,17 @@
     line-height: 24pt; 
     font-weight: 400px;
 }  
-.box{
+.box1{ 
     position: relative;
     overflow: hidden;
     text-align: center;
 }
-.box:hover{ 
+.box1:hover{ 
     margin-left: -8px;
     margin-top: -8px;
     box-shadow: 8px 8px #95e1d3; 
 }
-.box::before{
+.box1::before{
     content: "";
     position: absolute;
     background: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)) ;
@@ -172,19 +175,15 @@
     opacity: 1%;
     transition: all 0.4s linear;
 }
-.box:hover:before{
+.box1:hover:before{
     opacity: 85%;
 }
-.box img{
+.box1 img{
     width: 100%;
     height: auto;
-    transition: all 0.4s linear; 
-} 
-.box img:hover{
-    margin-left: -8px;
-    margin-bottom: -8px;
-} 
-.box .box-content{
+    /* transition: all 0.4s linear;  */
+}  
+.box1 .box-content1{
     color: #fff;
     width: 100%;
     transform: translateY(-50%) scale(0);
@@ -197,30 +196,30 @@
     /* transition: all 0.4s linear;  */
 
 }
-.box:hover .box-content{
+.box1:hover .box-content1{
     transform: translateY(-50%) scale(1);  
 }
-.box .box-icon{
+.box1 .box-icon1{
     margin: 0;
     padding: 0;
     list-style-type: none;
     position: absolute;
     right: 8px; 
 } 
-.box-icon li a{
+.box-icon1 li a{
     text-decoration: none;
     color: #fff;
     margin-left:auto;
     margin-right: auto;
 }
-.box:hover .box-icon{
+.box1:hover .box-icon1{
     color: #fff;
     font-family: 'Montserrat',;
     font-weight: bold;
     font-size: 18pt;
     width: 100%;
     position: absolute;
-    top:35%;
+    top:36%;
     left: 0  ;
 } 
 /* ===========about us End==============   */
@@ -230,17 +229,21 @@
 #facts-s{
      background-color:#95e1d3 ;
      /* height: 270px; */
-}
-#facts-s:hover{ 
-    border: 3px solid #999999 ; 
-}
+} 
 .fsb{
     display: flex;
 }
-.fmbx{ 
+.fmbx{  
     padding-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+} 
+.vl{
+    border-left: 0.1px solid #ffffff;
+    height: 100%;  
+}
+.hr{
+    display: none;
 }
 .fsff{
     display: inline;
@@ -392,6 +395,7 @@
     width: 550px;
     margin-left: auto;
     margin-right: auto; 
+    background-color: transparent;
 }
 .fsimg2f{
     margin-left: -110px;
@@ -485,7 +489,8 @@
 .d-lorem{
     max-height: 0;
     overflow: hidden; 
-    border-top: 1px solid #cccccc; 
+    border-top: 1px solid #cccccc;
+    padding-right: 20px;
 } 
 .pltf{
     padding: 15px; 
@@ -493,7 +498,20 @@
     font-style: italic;
     font-family: 'Roboto',;
     color: #cccccc;
+    height: 180px;
+    overflow-y: scroll; 
 }
+.pltf::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+} 
+.pltf::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+.pltf::-webkit-scrollbar-thumb {
+    background-color: #95e1d3;
+    border-radius: 5px; 
+}  
 .accordion-item:target .d-lorem{
     max-height: 20rem;
 } 
@@ -761,64 +779,7 @@
     overflow: hidden;
     text-align: center;
 }
-.gmain::before{
-    content: "";
-    position: absolute;
-    background: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)) ;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0px;
-    opacity: 1%;
-    transition: all 0.4s linear;
-}
-.gmain:hover:before{
-    opacity: 85%;
-}
-.gmain img{ 
-    width: 480px;
-    height: 390px;
-    transition: all 0.4s linear; 
-}  
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
   
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
-
-
-
 /* =======================WORK SECTION END===================== */
 
 /* ==============================testimonial START===================== */
@@ -1070,6 +1031,38 @@
     line-height: 15pt;
     letter-spacing: -1px;
 } 
+.lbim{ 
+    position: relative;
+    /* overflow: hidden; */
+    text-align: center;
+} 
+.lbim::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)) ;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0px;
+    opacity: 1%;
+    transition: all 0.4s linear;
+}
+.lbim:hover:before{
+    opacity: 85%;
+}    
+.lbim .lbdate{ 
+    transform: translateY(-50%) scale(0);
+    position: absolute;
+    top: 117%;
+    left: 0; 
+    transition: all 0.4s linear;  
+    width: 60px;
+    height: 70px;    
+}
+.lbim:hover .lbdate{
+    transform: translateY(-50%) scale(1);  
+}
+
 /* ========================BLOG END======================= */
 
 /* <!-- ======================MAP START======================== --> */
@@ -1137,6 +1130,14 @@ footer{
 .fbf p{
     display: inline;
 }
+.fbf::after{
+    content: "";
+    background-color: #cccccc;
+    height: 1px;
+    width: 380px;
+    display: block;
+    margin: 20px 0px;
+}
 .fuf{
     font-size: 15px;
     color: #999999;
@@ -1150,13 +1151,22 @@ footer{
 .contlist{
     margin-bottom: 20px;
 }
+.ssf input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+} 
 .emf{
     width: 210px;
-    padding: 0px;
+    padding: 10px;
     border: 0px;
     height: 30px;
- 
+    font-style: italic; 
 }    
+.emf:focus{
+    outline: none;
+}
 .ssbtn{
     width: 100px;
     border: 0px;
@@ -1169,6 +1179,7 @@ footer{
 } 
 .mbody{
     display: flex; 
+    margin-top: 30px;
 }
 .b1{
     height: 80px;
@@ -1197,7 +1208,7 @@ footer{
     font-weight: 600;
     display: block; 
     font-family: 'Montserrat',;
-    margin-bottom: 30px;
+    margin-bottom: 43px;
 } 
 .gallery{ 
     width: 300px;
@@ -1246,7 +1257,7 @@ footer{
 @media(max-width:1200px){ 
 
     /* =================ABOUT US START================= */
-    .box .box-content{
+    .box1 .box-content1{
         top: 58%;
     } 
     /* =================ABOUT US END================= */
@@ -1300,14 +1311,14 @@ footer{
     /* =================BANNER END================= */
 
     /* =================ABOUT US START================= */
-    .box{
+    .box1{
         margin-bottom: 40px;
     }
-    .box .box-content{
+    .box1 .box-content1{
         top: 58%;
         font-size: 25pt;
     }
-    .box:hover .box-icon{ 
+    .box1:hover .box-icon1{ 
         font-weight: bold;
         font-size: 35pt; 
         top:38%; 
@@ -1382,11 +1393,8 @@ footer{
     /* =======================OUR TEAM start========================= */
 
     .box{
-        margin-top: 40px;
-    }
-    .ntot{
-        margin-top: -20px;
-    }
+        margin-top: 50px;
+    } 
 
     /* =======================OUR TEAM END========================= */
  
@@ -1475,11 +1483,11 @@ footer{
 
     /* =========================ABOUT US STRAT===================== */
 
-    .box .box-content{
+    .box1 .box-content1{
         top: 58%;
         font-size: 20pt;
     }
-    .box:hover .box-icon{ 
+    .box1:hover .box-icon1{ 
         font-weight: bold;
         font-size: 22pt; 
         top:42%;  
@@ -1512,6 +1520,13 @@ footer{
     }
     .fsb{
         flex-direction: column; 
+    }
+    .vl{
+        display: none;  
+    }
+    .hr{
+        border-top: 3px solid #ffffff; 
+        display: block; 
     }
      /* =========================FACTS END===================== */
 
@@ -1590,15 +1605,15 @@ footer{
 
    /* =========================ABOUT US STRAT===================== */
 
-   .box{
+   .box1{
        margin-left: auto;
        margin-right: auto;
    }
-   .box .box-content{
+   .box1 .box-content1{
     top: 58%;
     font-size: 18pt;
     }
-    .box:hover .box-icon{ 
+    .box1:hover .box-icon1{ 
     font-weight: bold;
     font-size: 18pt; 
     top:40%;  
