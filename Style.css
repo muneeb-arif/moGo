@@ -98,6 +98,11 @@ body{
     border: 3px solid #f2f2f2; 
     margin-bottom: 40px;
 }
+.btn-lm:hover{
+    background-color: #f38181;
+    border: none;
+    padding: 3px 20px;
+} 
 .range{
     height: 50px;
 }
@@ -937,6 +942,7 @@ body{
 .lbmi{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .lbimf{
     display: flex;
@@ -1292,6 +1298,10 @@ footer{
         width: 300px;
         height: 220px;
     }
+    
+    .lbim::before{ 
+        width: 300px; 
+    }
 
     /* ===================BLOG END=================== */
 
@@ -1417,13 +1427,40 @@ footer{
         height: 100px;
     }
  /* ========================LOGOS END======================== */
+    /* =====================Testimonial START=================== */
 
+    .tmca{
+        display: block;
+    }
+    .timg{  
+        display: flex;
+        margin: auto;
+    } 
+    .tmnau{ 
+        margin: auto; 
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .aut{ 
+        display: block;
+        text-align: center;
+    } 
+    .auna{ 
+        display: flex;
+        margin-top: 20px; 
+        justify-content: center;
+    } 
+
+    /* ========================Testimonial END======================== */
     /* ===================BLOG START=================== */
 
     .lbimf{
         display: flex;
         width: 380px;
         height: 240px;
+    }
+    .lbim::before{ 
+        width: 380px; 
     }
 
     /* ===================BLOG END=================== */
@@ -1536,7 +1573,7 @@ footer{
     }
     .hr{
         border-top: 3px solid #ffffff; 
-        display: block; 
+        display: block;  
     }
      /* =========================FACTS END===================== */
 
@@ -1586,11 +1623,10 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
-    .logos-m img{
-        margin-right: auto;
-        margin-left: auto;
+    .logos-m img{ 
         width: 150px;
         height: 150px;
+        margin: 30px auto;
     }
     /* ===================LOGOS END=================== */ 
 }
