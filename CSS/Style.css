@@ -10,18 +10,18 @@ body{
     opacity: 90%; 
     background-image: linear-gradient(rgba(243, 129, 129), rgba(252, 227, 138)); 
 } 
-.navbar-brand{
+.logo{
     display: inline-block; 
     margin-top: 8px; 
 }
-.navbar-brand{
+.logof{
     color: aliceblue;
     text-decoration: none;
-    font-size: 30pt;
-    font-weight: bold; 
-    font-family: 'Montserrat',;
+    font-size: 40px;
+    font-weight: 900; 
+    font-family: 'Montserrat', ;
 }
-.navbar-brand:hover{
+.logof:hover{
     color: aliceblue;
 } 
 .navbar-nav{
@@ -29,48 +29,38 @@ body{
     align-items: center;
     align-self: center;
     align-content: center;
-    margin-left: auto;
 }
 .nav-item{
     display: inline-block; 
-    padding: 17px 0px 0px 20px; 
+    padding: 20px 0px 0px 20px; 
 } 
-.nav-link{
+.nav-item a{
     text-decoration: none; 
-    padding-bottom: 7px; 
-    display: flex;
-    color: #f2f2f2;  
-    font-size: 14pt;
-    font-weight: 500px;
+    padding-bottom: 7px;
+    float: left;
+    display: block;
+    color: #f2f2f2; 
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400px;
     font-family: 'Montserrat',;
     border-bottom: 3px solid transparent;
 }
-.nav-link:hover{
+.nav-item a:hover {
     border-bottom: 2px solid #fce38a;
-    color: #fff;
-}
-.nav-link-i{
-    text-decoration: none; 
-    padding-bottom: 7px; 
-    display: flex;
-    color: #f2f2f2;  
-    font-size: 14pt;
-    font-weight: 400px;
-    font-family: 'Montserrat',;
-}
-.nav-link-i:hover{
-    color: #fff;
-}
-.nav-link.active {
+  }
+.nav-item a.active {
     border-bottom: 2px solid #fce38a;
-} 
-.navbar-toggler{
-    color: #fff;
-    margin-left: auto;
-    padding: 0.25rem 0.20rem;
-    font-size: 2rem;
-    line-height: 1; 
-}  
+  }
+.nav-icone{
+    display: inline-block; 
+}
+.btn-h{
+    border: 0px;
+    background-color: transparent;
+    color: #f2f2f2; 
+    padding: 0px;
+}
 .banner{ 
     margin-top: 70px;
 }
@@ -513,11 +503,11 @@ body{
     font-style: italic;
     font-family: 'Roboto',;
     color: #cccccc;
-    height: 130px;
+    height: 180px;
     overflow-y: scroll; 
 }
 .pltf::-webkit-scrollbar{
-    width:  7px;
+    width: 5px;
     height: 5px;
 } 
 .pltf::-webkit-scrollbar-track {
@@ -528,7 +518,7 @@ body{
     border-radius: 5px; 
 }  
 .accordion-item:target .d-lorem{
-    max-height: 10rem;
+    max-height: 20rem;
 } 
 .accordion-item:target .bb-link .fa-chevron-down{
     display: none;
@@ -1642,7 +1632,7 @@ footer{
 @media(max-width:425px){ 
 
     /* =========================BANNER STRAT===================== */
-    /* .nav-item{
+    .nav-item{
         display: inline-block; 
         padding: 20px 0px 0px 10px; 
     }
@@ -1655,7 +1645,7 @@ footer{
         font-weight: 400px;
         font-family: 'Montserrat',;
         border-bottom: 3px solid transparent;
-    }  */
+    } 
    /* =========================BANNER END===================== */
 
    /* =========================ABOUT US STRAT===================== */
@@ -1710,5 +1700,6 @@ footer{
     }
 
     /* ===================SERVICES 2 END=================== */
+
     
 }
