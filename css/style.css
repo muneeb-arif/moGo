@@ -21,7 +21,7 @@ body{
     background-color: #999999;
 }
 #main{  
-    background-image: url(img/bg.jpg); 
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     text-align: center;
 }
@@ -397,7 +397,7 @@ body{
 #feature-s{
     background-size: cover;
     text-align: center;
-    background-image: url(img/f3.jpg); 
+    background-image: url(../img/f3.jpg);
 }
 .fmain{
     background-color: #f2f2f2;
@@ -810,17 +810,28 @@ body{
 }
 .gallery-s{
     display: block;
+    width: 100%;
+    max-width: 100%;
 }
-/* .gmain{
+.gallery-s:after {
+    /*content: '';*/
+    /*display: block;*/
+    /*clear: both;*/
+}
+.gmain{
     position: relative;
     overflow: hidden;
     text-align: center;
-} */
-.gmain img{
-    flex: 50%;  
-    display: flex;
-    width: 430px;
-    height: 320px; 
+    /*float: left;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+}
+.gallery-s img{
+    width: 100% !important;
+    /*flex: 50%;  */
+    /*display: flex;*/
+    /*width: 430px;*/
+    /*height: 320px; */
 }
   
 /* =======================WORK SECTION END===================== */
@@ -872,7 +883,7 @@ body{
 /* =======================WHAT PEOPLE SAY START===================== */
 
 .wps-s{ 
-    background-image: url(img/wps1.jpg);
+    background-image: url(../img/wps1.jpg);
     background-size: cover; 
 }
 .wpsmain{
@@ -1114,7 +1125,7 @@ body{
 
 #map-s{  
     background-size: cover; 
-    background-image: url(img/m1.jpg);
+    background-image: url(../img/m1.jpg);
 }
 .mm-b{
     background-color: #f2f2f2;
@@ -1731,3 +1742,23 @@ footer{
     /* ===================SERVICES 2 END=================== */
     
 }
+
+.slick-prev:before,
+.slick-next:before{
+    position: absolute;
+    left: 0;
+    color: #000;
+    font-size: 50px;
+    content: '\f053';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+.slick-next:before {
+    right: 0;
+    left: 100%;
+    content: '\f054';
+}
+
+.gmain { width: 200px; }
+/*.grid-item--width2 { width: 400px; }*/
